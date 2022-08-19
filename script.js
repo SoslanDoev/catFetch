@@ -18,7 +18,7 @@ function funct() {
         })
 }
 
-btn.addEventListener('click', () => {
+function buttonClick() {
     let complete = img.complete
     if(complete) { funct() }
-})
+}
