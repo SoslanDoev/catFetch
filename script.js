@@ -17,3 +17,8 @@ function funct() {
             console.log(error)
         })
 }
+
+btn.addEventListener('click', () => {
+    let complete = img.complete
+    if(complete) { funct() }
+})
