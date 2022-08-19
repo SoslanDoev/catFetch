@@ -1,5 +1,5 @@
 let 
-    url = 'http://aws.random.cat/meow',
+    url = 'https://aws.random.cat/meow',
     img = document.querySelector('.img'),
     btn = document.querySelector('.btn')
 funct()
