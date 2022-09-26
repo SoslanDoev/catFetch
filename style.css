@@ -8,6 +8,7 @@
 
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .main {
@@ -51,6 +53,7 @@ a {
     box-shadow: 7px -5px 10px 0px rgba(0,0,0,0.75);
     border: 2px solid #d8dee9;
     overflow: hidden;
+    z-index: 50;
 }
 
 .box__preloader {
@@ -103,6 +106,20 @@ a {
     object-fit: cover;
     object-position: center;
     border-radius: 50px;
+}
+
+.newDivAnimation {
+    font-size: 12px;
+    animation: newDivAnimation 0.75s linear infinite;
+}
+
+@keyframes newDivAnimation {
+    0% {
+        font-size: 12px;
+    }
+    100% {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 650px) {

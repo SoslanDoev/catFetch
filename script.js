@@ -27,3 +27,26 @@ function buttonClick() {
     let complete = img.complete
     if(complete) { funct() }
 }
+
+var mas = [
+    '😸', '😺', '😹', '😻', '😼', '😽', '🙀', '😿', '😾', '🐱'
+]
+
+document.addEventListener('keydown', (event) => {
+    if (event.code == 'Keyz' || event.code == 'KeyZ') {
+        let
+            screenWidth = window.screen.width 
+            screenHeight = window.screen.height
+            randomX = Math.floor(Math.random() * screenWidth);
+            randomY = Math.floor(Math.random() * screenHeight);
+            randomSmile = Math.floor(Math.random() * mas.length);
+            newDiv = document.createElement('div')
+        newDiv.innerHTML = mas[randomSmile] 
+        newDiv.classList.add('newDivAnimation')
+        newDiv.style.position = `absolute`
+        newDiv.style.left = `${randomX}px`
+        newDiv.style.top = `${randomY}px`
+        newDiv.style.zIndex = 5
+        document.body.appendChild(newDiv)
+    }
+});
